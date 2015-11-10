@@ -1,4 +1,4 @@
-//Draws random quotes updated 4 times per second
+//Draws random quotes updated 4 times per secondyyy
 PFont pFont;  //Check on processing page for how to use PFont
 String[] myQuotes = new String[10];
 String quoteToDraw;
