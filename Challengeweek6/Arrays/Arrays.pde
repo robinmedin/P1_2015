@@ -6,7 +6,7 @@ String quoteToDraw;
 void setup() {
   fullScreen();
   //size(400, 600); //Use fullscreen when finished
-  frameRate(4);  //Run this slow.....
+  frameRate(1);  //Run this slow.....
   addQuotes();
 }
 
@@ -37,6 +37,9 @@ void addQuotes() {
 
 /**Selects a random Qoute from myQuotes.*/
 String getQuote() {
+int index = int(random(myQuotes.length));  // Same as int(random(4))
+println(myQuotes[index]);  // Prints one of the four words
+ 
   //Write code to select a random quote
-  return "Test";
+  return myQuotes[index];
 }
