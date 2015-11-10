@@ -3,16 +3,28 @@ PFont pFont;  //Check on processing page for how to use PFont
 String[] myQuotes = new String[10];
 String quoteToDraw;
 
-void setup() {
-  fullScreen();
-  //size(400, 600); //Use fullscreen when finished
-  frameRate(1);  //Run this slow.....
+
+
+
+
+
+void setup(){
+  
+  PFont myFont = createFont("Zapfino.vlw", 24);
+  myFont = loadFont("Zapfino-24.vlw");
+
+  size(400,600); //Use fullscreen when finished
+  frameRate(4);  //Run this slow.....
   addQuotes();
+  textFont(myFont);
+  
 }
 
-void draw() {
-  quoteToDraw = getQuote();
-  //Print the qoute on the screen using PFont.
+void draw(){
+    quoteToDraw = getQuote();
+    textSize(24);
+    text("JAHARÅ",100,100);
+
 }
 
 //Methods
