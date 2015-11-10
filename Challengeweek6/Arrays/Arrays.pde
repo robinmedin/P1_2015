@@ -1,12 +1,21 @@
 //Draws random quotes updated 4 times per secondyyy
-PFont pFont;  //Check on processing page for how to use PFont
+//PFont myFont;
+
+//Check on processing page for how to use PFont
+
+
+
 String[] myQuotes = new String[10];
 String quoteToDraw;
 
 void setup(){
+  
+  PFont myFont = createFont("SansSerif.vlw", 54); 
   size(400,600); //Use fullscreen when finished
   frameRate(4);  //Run this slow.....
   addQuotes();
+  textFont(myFont);
+  text("JAHARÅ",100,100);
 }
 
 void draw(){
